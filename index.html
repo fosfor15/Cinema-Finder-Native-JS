@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Cinema Finder</title>
+</head>
+<body>
+
+    <h1>Cinema Finder</h1>
+
+    <div id="input-container">
+        <div class="control-container">
+            <label for="title-input">Title:</label>
+            <input
+                type="text"
+                name="title"
+                id="title-input"
+                placeholder="Enter title"
+                title="Enter title without repeating. Title starts with letters and digits."
+            >
+        </div>
+
+        <div class="control-container">
+            <label for="type-select">Type:</label>
+            <select name="type" id="type-select">
+                <option value="film">Films</option>
+                <option value="tv_show">TV Show</option>
+                <option value="all">All</option>
+            </select>
+        </div>
+
+        <button id="search-button">Search</button>
+    </div>
+
+    <h3 id="status-output"></h3>
+
+    <div id="search-results-container"></div>
+    
+</body>
+</html>
